@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Николай Климов](https://up.htmlacademy.ru/htmlcss/26/user/1167521).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Половков](https://htmlacademy.ru/profile/psinegmatic).
 
 ---
 
