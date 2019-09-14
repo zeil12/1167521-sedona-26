@@ -7,47 +7,65 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-          <a href="">
-            <img src="img/logo.png" width="140px" height="71px" alt="эмблема-ссылка">
-          </a>
-          <ul>
-            <li>
-              <a href="">Информация</a>
-            </li>
-            <li>
-              <a href="">Фото и Видео</a>
-            </li>
-            <li>
-              <a href="">Карта штата</a>
-            </li>
-            <li>
-              <a href="catalog.html">Гостиницы</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+  <header>
+    <nav>
+      <a href="">
+        <img src="img/logo.png" width="140px" height="71px" alt="эмблема-ссылка">
+      </a>
+      <ul>
+        <li>
+          <a href="">Информация</a>
+        </li>
+        <li>
+          <a href="">Фото и Видео</a>
+        </li>
+        <li>
+          <a href="">Карта штата</a>
+        </li>
+        <li>
+          <a href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <main>
     <h1>Поиск гостиницы</h1>
     <section>
       <img src="img/filter-background.png" width="1200px" height="800px" alt="background">
       <h2>Критерии поиска</h2>
-      <ul>
-        <li>
-          <p>Инфраструктура:</p>
-          <!--Форма-->
-        </li>
-        <li>
-          <p>Тип жилья:</p>
-          <!--Форма-->
-        </li>
-        <li>
-          <p>Стоимость в сутки (Р):</p>
-          <!--Форма и бегунок-->
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <label for="pool-name"><span>Бассейн</span>
+            <input type="checkbox" id="pool-name" name="pool" checked>
+          </label>
+          <label><span>Парковка:</span>
+            <input type="checkbox" id="parking-name" name="parking">
+          </label>
+          <label><span>wi-fi</span>
+            <input type="checkbox" id="wi-fi-name" name="Wi-Fi">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Тип Жилья:</legend>
+          <label>Гостиница
+            <input type="checkbox" id="hotel-name" name="hotel" checked>
+          </label>
+          <label>Мотель
+            <input type="checkbox" id="motel-name" name="motel" checked>
+          </label>
+          <label>Апартаменты
+            <input type="checkbox" id="appartments-name" name="appartments" checked>
+          </label>
+        </fieldset>
+        <div>
+          <span>Стоимость в сутки (P):</span>
+          <span>От 0 до 3000</span>
+          <input id="cost-slider" name="cost-range" value="">
           <button type="button">Показать</button>
-        </li>
-      </ul>
+        </div>
+    </section>
+    <section>
       <div>
         <span>Найдено: 3</span>
         <span>Сортировка:</span>
@@ -58,10 +76,14 @@
         </ul>
         <div>
           <span>
-            <img src="img/icon-up-dir.svg" width="11px" height="10px" alt="up">
+            <button type="button">
+              <img src="img/icon-up-dir.svg" width="11px" height="10px" alt="up">
+            </button>
           </span>
           <span>
-            <img src="img/icon-down-dir.svg" width="11px" height="10px" alt="down">
+            <button type="button">
+              <img src="img/icon-down-dir.svg" width="11px" height="10px" alt="down">
+            </button>
           </span>
         </div>
       </div>
@@ -163,10 +185,15 @@
     <div>
       <p>Website By</p>
       <a href="//up.htmlacademy.ru/htmlcss/26">
-        <img src="img/logo-htmla.png" width="115px" height="41px" alt="эмблема">
+        <img src="img/logo-htmla.pngs" width="115px" height="41px" alt="эмблема">
       </a>
     </div>
   </footer>
+
+  <link href="css/ionslider/ion.rangeSlider.min.css" rel="stylesheet">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/ion.rangeslider/ion.rangeSlider.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
