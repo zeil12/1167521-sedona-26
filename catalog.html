@@ -33,38 +33,37 @@
     <section>
       <img src="img/filter-background.png" width="1200px" height="800px" alt="background">
       <h2 class="visually-hidden">Критерии поиска</h2>
-      
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <legend>Инфраструктура:</legend>
-          <label for="pool-name"><span>Бассейн</span>
-            <input type="checkbox" id="pool-name" name="pool" checked>
-          </label>
-          <label><span>Парковка:</span>
-            <input type="checkbox" id="parking-name" name="parking">
-          </label>
-          <label><span>wi-fi</span>
-            <input type="checkbox" id="wi-fi-name" name="Wi-Fi">
-          </label>
-        </fieldset>
-        <fieldset>
-          <legend>Тип Жилья:</legend>
-          <label>Гостиница
-            <input type="checkbox" id="hotel-name" name="hotel" checked>
-          </label>
-          <label>Мотель
-            <input type="checkbox" id="motel-name" name="motel" checked>
-          </label>
-          <label>Апартаменты
-            <input type="checkbox" id="appartments-name" name="appartments" checked>
-          </label>
-        </fieldset>
-        <div>
-          <span>Стоимость в сутки (P):</span>
-          <span>От 0 до 3000</span>
-          <input id="cost-slider" name="cost-range" value="">
-          <button type="submit">Показать</button>
-        </div>
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+        <label for="pool-name"><span>Бассейн</span>
+          <input type="checkbox" id="pool-name" name="pool" checked>
+        </label>
+        <label><span>Парковка:</span>
+          <input type="checkbox" id="parking-name" name="parking">
+        </label>
+        <label><span>wi-fi</span>
+          <input type="checkbox" id="wi-fi-name" name="Wi-Fi">
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Тип Жилья:</legend>
+        <label>Гостиница
+          <input type="checkbox" id="hotel-name" name="hotel" checked>
+        </label>
+        <label>Мотель
+          <input type="checkbox" id="motel-name" name="motel" checked>
+        </label>
+        <label>Апартаменты
+          <input type="checkbox" id="appartments-name" name="appartments" checked>
+        </label>
+      </fieldset>
+      <div>
+        <span>Стоимость в сутки (P):</span>
+        <span>От 0 до 3000</span>
+        <input id="cost-slider" name="cost-range" value="">
+        <form action="https://echo.htmlacademy.ru" method="post"></form>
+        <button type="submit">Показать</button>
+      </div>
     </section>
     <section>
       <div>
@@ -77,12 +76,12 @@
         </ul>
         <div>
           <span>
-            <button type="submit">
+            <button type="button">
               <img src="img/icon-up-dir.svg" width="11px" height="10px" alt="up">
             </button>
           </span>
           <span>
-            <button type="submit">
+            <button type="button">
               <img src="img/icon-down-dir.svg" width="11px" height="10px" alt="down">
             </button>
           </span>
@@ -98,7 +97,7 @@
             <h3>AMARA RESORT & SPA</h3>
             Гостиница от 4000 Р.
             <div>
-              <button type="submit">Подробнее</button>
+              <button type="button">Подробнее</button>
               <button type="submit">Забронировать</button>
             </div>
           </div>
@@ -124,7 +123,7 @@
             <h3>DESRT QUAIL INN</h3>
             Мотель от 3000 Р.
             <div>
-              <button type="submit">Подробнее</button>
+              <button type="button">Подробнее</button>
               <button type="submit">Забронировать</button>
             </div>
           </div>
@@ -147,7 +146,7 @@
             <h3>VILLAS AT POCO DIABLO</h3>
             Апартаменты от 2000 Р.
             <div>
-              <button type="submit">Подробнее</button>
+              <button type="button">Подробнее</button>
               <button type="submit">Забронировать</button>
             </div>
           </div>
@@ -162,7 +161,7 @@
           </div>
         </li>
       </ul>
-    </form>
+      </form>
     </section>
   </main>
   <footer>
