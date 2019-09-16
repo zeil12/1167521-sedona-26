@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,139 +32,139 @@
     </nav>
   </header>
   <main>
-    <h1 class="visually-hidden">Поиск гостиницы</h1>
-    <section>
-      <img src="img/filter-background.png" width="1200px" height="800px" alt="background">
-      <h2 class="visually-hidden">Критерии поиска</h2>
-      <fieldset>
-        <legend>Инфраструктура:</legend>
-        <label for="pool-name"><span>Бассейн</span>
-          <input type="checkbox" id="pool-name" name="pool" checked>
-        </label>
-        <label><span>Парковка:</span>
-          <input type="checkbox" id="parking-name" name="parking">
-        </label>
-        <label><span>wi-fi</span>
-          <input type="checkbox" id="wi-fi-name" name="Wi-Fi">
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>Тип Жилья:</legend>
-        <label>Гостиница
-          <input type="checkbox" id="hotel-name" name="hotel" checked>
-        </label>
-        <label>Мотель
-          <input type="checkbox" id="motel-name" name="motel" checked>
-        </label>
-        <label>Апартаменты
-          <input type="checkbox" id="appartments-name" name="appartments" checked>
-        </label>
-      </fieldset>
-      <div>
-        <span>Стоимость в сутки (P):</span>
-        <span>От 0 до 3000</span>
-        <input id="cost-slider" name="cost-range" value="">
-        <form action="https://echo.htmlacademy.ru" method="post">
-        <button type="submit">Показать</button>
-      </div>
-    </section>
-    <section>
-      <div>
-        <span>Найдено: 3</span>
-        <span>Сортировка:</span>
-        <ul>
-          <li><a href="">По цене</a></li>
-          <li><a href="">По типу</a></li>
-          <li><a href="">По рейтингу</a></li>
-        </ul>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <h1 class="visually-hidden">Поиск гостиницы</h1>
+      <section>
+        <img src="img/filter-background.png" width="1200px" height="800px" alt="background">
+        <h2 class="visually-hidden">Критерии поиска</h2>
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <label for="pool-name"><span>Бассейн</span>
+            <input type="checkbox" id="pool-name" name="pool" checked>
+          </label>
+          <label><span>Парковка:</span>
+            <input type="checkbox" id="parking-name" name="parking">
+          </label>
+          <label><span>wi-fi</span>
+            <input type="checkbox" id="wi-fi-name" name="Wi-Fi">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Тип Жилья:</legend>
+          <label>Гостиница
+            <input type="checkbox" id="hotel-name" name="hotel" checked>
+          </label>
+          <label>Мотель
+            <input type="checkbox" id="motel-name" name="motel" checked>
+          </label>
+          <label>Апартаменты
+            <input type="checkbox" id="appartments-name" name="appartments" checked>
+          </label>
+        </fieldset>
         <div>
-          <span>
-            <button type="button">
-              <img src="img/icon-up-dir.svg" width="11px" height="10px" alt="up">
-            </button>
-          </span>
-          <span>
-            <button type="button">
-              <img src="img/icon-down-dir.svg" width="11px" height="10px" alt="down">
-            </button>
-          </span>
+          <span>Стоимость в сутки (P):</span>
+          <span>От 0 до 3000</span>
+          <input id="cost-slider" name="cost-range" value="">
+          <button type="submit">Показать</button>
         </div>
-      </div>
-    </section>
-    <section>
-      <h2 class="visually-hidden">Список гостиниц</h2>
-      <ul>
-        <li>
-          <img src="img/hotel-picture.jpg" width="135px" height="90px" alt="картинка">
+      </section>
+      <section>
+        <div>
+          <span>Найдено: 3</span>
+          <span>Сортировка:</span>
+          <ul>
+            <li><a href="">По цене</a></li>
+            <li><a href="">По типу</a></li>
+            <li><a href="">По рейтингу</a></li>
+          </ul>
           <div>
-            <h3>AMARA RESORT & SPA</h3>
-            Гостиница от 4000 Р.
+            <span>
+              <button type="button">
+                <img src="img/icon-up-dir.svg" width="11px" height="10px" alt="up">
+              </button>
+            </span>
+            <span>
+              <button type="button">
+                <img src="img/icon-down-dir.svg" width="11px" height="10px" alt="down">
+              </button>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Список гостиниц</h2>
+        <ul>
+          <li>
+            <img src="img/hotel-picture.jpg" width="135px" height="90px" alt="картинка">
             <div>
-              <button type="button">Подробнее</button>
-              <button type="submit">Забронировать</button>
+              <h3>AMARA RESORT & SPA</h3>
+              Гостиница от 4000 Р.
+              <div>
+                <button type="button">Подробнее</button>
+                <button type="submit">Забронировать</button>
+              </div>
             </div>
-          </div>
-          <div>
-            <span>
-              <img src="img/star.svg" width="18px" height="17px">
-            </span>
-            <span>
-              <img src="img/star.svg" width="18px" height="17px">
-            </span>
-            <span>
-              <img src="img/star.svg" width="18px" height="17px">
-            </span>
-            <span>
-              <img src="img/star.svg" width="18px" height="17px">
-            </span>
-            <span>Рейтинг 8,5</span>
-          </div>
-        </li>
-        <li>
-          <img src="img/motel-picture.jpg" width="135px" height="90px" alt="картинка">
-          <div>
-            <h3>DESRT QUAIL INN</h3>
-            Мотель от 3000 Р.
             <div>
-              <button type="button">Подробнее</button>
-              <button type="submit">Забронировать</button>
+              <span>
+                <img src="img/star.svg" width="18px" height="17px">
+              </span>
+              <span>
+                <img src="img/star.svg" width="18px" height="17px">
+              </span>
+              <span>
+                <img src="img/star.svg" width="18px" height="17px">
+              </span>
+              <span>
+                <img src="img/star.svg" width="18px" height="17px">
+              </span>
+              <span>Рейтинг 8,5</span>
             </div>
-          </div>
-          <div>
-            <span>
-              <img src="img/star.svg" width="18px" height="17px">
-            </span>
-            <span>
-              <img src="img/star.svg" width="18px" height="17px">
-            </span>
-            <span>
-              <img src="img/star.svg" width="18px" height="17px">
-            </span>
-            <span>Рейтинг 8,9</span>
-          </div>
-        </li>
-        <li>
-          <img src="img/appartment-picture.jpg" width="135px" height="90px" alt="картинка">
-          <div>
-            <h3>VILLAS AT POCO DIABLO</h3>
-            Апартаменты от 2000 Р.
+          </li>
+          <li>
+            <img src="img/motel-picture.jpg" width="135px" height="90px" alt="картинка">
             <div>
-              <button type="button">Подробнее</button>
-              <button type="submit">Забронировать</button>
+              <h3>DESRT QUAIL INN</h3>
+              Мотель от 3000 Р.
+              <div>
+                <button type="button">Подробнее</button>
+                <button type="submit">Забронировать</button>
+              </div>
             </div>
-          </div>
-          <div>
-            <span>
-              <img src="img/star.svg" width="18px" height="17px">
-            </span>
-            <span>
-              <img src="img/star.svg" width="18px" height="17px">
-            </span>
-            <span>Рейтинг 9,2</span>
-          </div>
-        </li>
-      </ul>
-      </form>
+            <div>
+              <span>
+                <img src="img/star.svg" width="18px" height="17px">
+              </span>
+              <span>
+                <img src="img/star.svg" width="18px" height="17px">
+              </span>
+              <span>
+                <img src="img/star.svg" width="18px" height="17px">
+              </span>
+              <span>Рейтинг 8,9</span>
+            </div>
+          </li>
+          <li>
+            <img src="img/appartment-picture.jpg" width="135px" height="90px" alt="картинка">
+            <div>
+              <h3>VILLAS AT POCO DIABLO</h3>
+              Апартаменты от 2000 Р.
+              <div>
+                <button type="button">Подробнее</button>
+                <button type="submit">Забронировать</button>
+              </div>
+            </div>
+            <div>
+              <span>
+                <img src="img/star.svg" width="18px" height="17px">
+              </span>
+              <span>
+                <img src="img/star.svg" width="18px" height="17px">
+              </span>
+              <span>Рейтинг 9,2</span>
+            </div>
+          </li>
+        </ul>
+    </form>
     </section>
   </main>
   <footer>
@@ -186,7 +189,7 @@
     <div>
       <p>Website By</p>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmla.png" width="115px" height="41px" alt="эмблема">
+        <img src="img/html_logo.svg" width="115px" height="41px" alt="эмблема">
       </a>
     </div>
   </footer>
