@@ -28,7 +28,7 @@ a {
 
 .main-navigation {
   font-size: 14px;
-  line-height: 1, 86;
+  line-height: 1.86;
   color: #ffffff;
   font-weight: bold;
   background-color: #ffffff;
@@ -74,14 +74,14 @@ a {
 
 .main-greeting {
   font-weight: bold;
-  line-height: 1,24;
+  line-height: 1.24;
   font-size: 21px;
 }
 
 .feature-text {
   background-color:#81b3d2;
   text-align: center;
-  line-height: 1,5;
+  line-height: 1.5;
   color: #ffffff;
 
 }
@@ -109,7 +109,7 @@ a {
 
 .advice p:last-of-type {
   color: #333333;
-  line-height: 1,5;
+  line-height: 1.5;
 }
 
 .feature-list {
