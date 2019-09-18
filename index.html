@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<p lang="ru">
+<html lang="ru">
 
   <head>
     <meta charset="utf-8">
@@ -10,12 +10,12 @@
   </head>
 
   <body>
-    <div class="content-rap">
-      <header class="main-header">
-        <nav class="main-navigation">
-          <a class="main-header-logo" href="">
-            <img src="img/logo.png" width="140px" height="71px" alt="эмблема-ссылка на главную страницу">
-          </a>
+    <div class="content-wrapper">
+      <header class="header">
+          <a class="header-logo" href="">
+              <img src="img/logo.png" width="140px" height="71px" alt="logo-link">
+            </a>
+        <nav class="main-menu">
           <ul class="site-navigation">
             <li class="navigation-element">
               <a href="">Информация</a>
@@ -101,43 +101,45 @@
             </li>
           </ul>
         </section>
-        <section class="before-search">
+        <section class="hotel-search">
           <h2 class="search-head">Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиницы в Седоне</p>
           <button class="button modal-button" type="button">Поиск гостиницы в Седоне</button>
-        </section>
-        <section class="condition">
           <form action="https://echo.htmlacademy.ru" method="post">
-            <p class="condition-block">
-              <label for="in">Дата заезда:</label>
-              <input class="condition-form" type="text" id="in" name="check-in" value="24 апреля 2017">
+            <div class="condition-block">
+              <label>Дата заезда:
+              <input class="condition-form" type="text" name="check-in" value="24 апреля 2017">
+              </label>
               <div class="calendar">
                 <img src="img/calendar.svg" width="21px" height="22px" alt="календарь">
               </div>
-            </p>
-            <p class="condition-block">
-              <label for="out">Дата выезда:</label>
-              <input class="condition-form" type="text" id="out" name="check-out" value="4 июля 2017">
+            </div>
+            <div class="condition-block">
+              <label>Дата выезда:
+              <input class="condition-form" type="text" name="check-out" value="4 июля 2017">
+              </label>
               <div class="calendar">
                 <img src="img/calendar.svg" width="21px" height="22px" alt="календарь">
               </div>
-            </p>
-            <p class="condition-block">
-              <label for="adults">Взрослые:</label>
+            </div>
+            <div class="condition-block">
               <div class="amount-of">
+                <label>Взрослые:
                 <button class="condition-button minus-button" type="button">-</button>
-                <input class="condition-button people-number" type="text" id="adults" name="amount_of_adults" value="2">
+                <input class="condition-button people-number" type="text" name="amount_of_adults" value="2">
                 <button class="condition-button plus-button" type="button">+</button>
+                </label>
               </div>
-            </p>
-            <p class="condition-block">
-              <label for="kids">Дети:</label>
+            </div>
+            <div class="condition-block">
               <div class="amount-of">
+                <label>Дети:
                 <button class="condition-button minus-button" type="button">-</button>
-                <input class="condition-button people-number" type="text" id="kids" name="amount_of_kids" value="0">
+                <input class="condition-button people-number" type="text" name="amount_of_kids" value="0">
                 <button class="condition-button plus-button" type="button">+</button>
+                </label>
               </div>
-            </p>
+            </div>
             <button class="button search-button" type="submit">Найти</button>
           </form>
           <div class="map">
@@ -145,7 +147,7 @@
           </div>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="footer">
         <div class="footer-tag">
           <p>#Visitsedona</p>
         </div>
@@ -166,7 +168,7 @@
             </a>
           </li>
         </ul>
-        <div class="footer-contacts">
+        <div class="footer-copyrights">
           <p>Website By</p>
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img class="hmtl-logo" src="img/html_logo.svg" width="115px" height="41px" alt="эмблема">
