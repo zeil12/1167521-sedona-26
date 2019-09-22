@@ -35,15 +35,19 @@
         </nav>
       </header>
       <main>
-        <div class="welcome-photo"><img src="img/welcome.png" width="459px" height="353px" alt="welcome-text"></div>
-        <section class="greetings"> ]
-          <img class="mask" src="img/mask.png" width="1202px" height="auto" alt="mask">
-          <div class="greetings-text">
-            <p class="main-greeting">Седона - небольшой городок в аризоне,<br>
-              заслуживающий большего!</p>
-            <p class="second-greeting">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-каньон!</p>
-          </div>
-        </section>
+        <div class="welcome-wrapper">
+          <img class="main-backgorund-photo" src="img/background-photo.jpg" width="1200px" height="773px"
+            alt="background-photo">
+          <div class="welcome-photo"><img src="img/welcome.png" width="459px" height="353px" alt="welcome-text"></div>
+          <section class="greetings"> ]
+            <img class="mask" src="img/mask.png" width="1202px" height="auto" alt="mask">
+            <div class="greetings-text">
+              <p class="main-greeting">Седона - небольшой городок в аризоне,<br>
+                заслуживающий большего!</p>
+              <p class="second-greeting">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-каньон!</p>
+            </div>
+          </section>
+        </div>
         </section>
         <section class="features">
           <h1 class="visually-hidden">Информация о седоне</h1>
@@ -96,13 +100,13 @@
                 находятся очень близко</p>
             </li>
             <li class="listed-feature">
-              <p>Красивая дорога</p>
+              <p>Красивая<br>дорога</p>
               <p>-№4</p>
               <p> Ехать в седону из Лас-Вегаса совсем<br>
                 не скучно!</p>
             </li>
             <li class="listed-feature">
-              <p>Мало туристов</p>
+              <p>Мало<br>туристов</p>
               <p>-№5-</p>
               <p> Большинство едет в Гранд каньон<br>
                 и толпится там</p>
@@ -116,79 +120,82 @@
               и мы покажем вам лучшие предложения гостиницы в Седоне</p>
             <button class="button modal-button" type="button">Поиск гостиницы в Седоне</button>
           </div>
-          <div class="map">
+          <section class="modal-window">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <div class="modal-container">
+                  <div class="check-in-block">
+                    <label>Дата заезда:
+                      <input class="condition-form" type="text" name="check-in" value="24 апреля 2017">
+                    </label>
+                    <div class="calendar">
+                      <a>
+                      <img src="img/calendar.svg" width="21px" height="22px" alt="календарь">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="check-out-block">
+                    <label>Дата выезда:
+                      <input class="condition-form" type="text" name="check-out" value="4 июля 2017">
+                    </label>
+                    <div class="calendar-2">
+                      <a>
+                      <img src="img/calendar.svg" width="21px" height="22px" alt="календарь">
+                     </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="amount-of-block">
+                  <div class="adult-form">
+                    <label for="adults">Взрослые:</label>
+                    <button class="condition-button adult-form-button" type="button">-</button>
+                    <input class="condition-button people-number" type="text" id="adults" name="amount_of_adults" value="2">
+                    <button class="condition-button plus-button" type="button">+</button>
+                  </div>
+                  <div class="kids-form">
+                    <label for="kids">Дети:</label>
+                    <button class="condition-button kids-form-button" type="button">-</button>
+                    <input class="condition-button people-number" type="text id=" kids name="amount_of_kids" value="0">
+                    <button class="condition-button plus-button" type="button">+</button>
+                  </div>
+                </div>
+                <button class="button search-button" type="submit">Найти</button>
+              </form>
+            </section>
+          </section>
+        <div class="map">
             <img src="img/map.png" width="1200px" height="593px" alt="our coordinats">
           </div>
-        </section>
-        <section class="modal-window">
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <div class="modal-container">
-              <div class="check-in-block">
-                <label>Дата заезда:
-                  <input class="condition-form" type="text" name="check-in" value="24 апреля 2017">
-                </label>
-                <div class="calendar">
-                  <img src="img/calendar.svg" width="21px" height="22px" alt="календарь">
-                </div>
-              </div>
-              <div class="check-out-block">
-                <label>Дата выезда:
-                  <input class="condition-form" type="text" name="check-out" value="4 июля 2017">
-                </label>
-                <div class="calendar-2">
-                  <img src="img/calendar.svg" width="21px" height="22px" alt="календарь">
-                </div>
-              </div>
-            </div>
-            <div class="amount-of-block">
-              <div class="adult-form">
-                <label for="adults">Взрослые:</label>
-                  <button class="condition-button adult-form-button" type="button">-</button>
-                  <input class="condition-button people-number" type="text" id="adults" name="amount_of_adults"
-                    value="2">
-                  <button class="condition-button plus-button" type="button">+</button>
-              </div>
-              <div class="kids-form">
-                <label for="kids">Дети:</label>
-                <button class="condition-button kids-form-button" type="button">-</button>
-                <input class="condition-button people-number" type="text id=" kids name="amount_of_kids" value="0">
-                <button class="condition-button plus-button" type="button">+</button>
-              </div>
-            </div>
-            <button class="button search-button" type="submit">Найти</button>
-          </form>
-        </section>
       </main>
       <footer class="footer">
-        <div class="footer-tag">
-          <p>#Visitsedona</p>
-        </div>
-        <ul class="footer-social">
-          <li class="social-button">
-            <a href="//twitter.com">
-              <img src="img/twitter.svg" width="17px" height="15px" alt="эмблема">
+        <div class="footer-container">
+          <div class="footer-tag">
+            <p>#Visitsedona</p>
+          </div>
+          <ul class="footer-social">
+            <li class="social-button">
+              <a class="social-link" href="https://twitter.com">
+                <img src="img/twitter.svg" width="17px" height="15px" alt="эмблема">
+              </a>
+            </li>
+            <li class="social-button">
+              <a class="social-link" href="https://facebook.com">
+                <img src="img/facebook.svg" width="12px" height="22px" alt="эмблема">
+              </a>
+            </li>
+            <li class="social-button">
+              <a class="social-link" href="https://youtube.com">
+                <img src="img/youtube.svg" width="20px" height="16px" alt="эмблема">
+              </a>
+            </li>
+          </ul>
+          <div class="footer-copyrights">
+            <p>Website By</p>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img class="hmtl-logo" src="img/html_logo.svg" width="115px" height="41px" alt="эмблема">
             </a>
-          </li>
-          <li class="social-button">
-            <a href="//facebook.com">
-              <img src="img/facebook.svg" width="12px" height="22px" alt="эмблема">
-            </a>
-          </li>
-          <li class="social-button">
-            <a href="//youtube.com">
-              <img src="img/youtube.svg" width="20px" height="16px" alt="эмблема">
-            </a>
-          </li>
-        </ul>
-        <div class="footer-copyrights">
-          <p>Website By</p>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img class="hmtl-logo" src="img/html_logo.svg" width="115px" height="41px" alt="эмблема">
-          </a>
+          </div>
         </div>
       </footer>
-
-    </div>
   </body>
 
   </html
