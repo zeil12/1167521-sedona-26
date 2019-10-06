@@ -136,6 +136,8 @@ Build date: 2018-12-12 00:07:25
 
 .irs--flat .irs-handle > i:first-child:hover {
   background-image: url("img/slider-button-2.png");
+  background-repeat: no-repeat;
+  width: 24px;
 }
 
 }
