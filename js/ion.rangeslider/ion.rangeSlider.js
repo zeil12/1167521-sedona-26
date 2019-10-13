@@ -1715,18 +1715,7 @@
         // =============================================================================================================
         // Service methods
 
-        toggleInput: function () {
-            this.$cache.input.toggleClass("irs-hidden-input");
-
-            if (this.has_tab_index) {
-                this.$cache.input.prop("tabindex", -1);
-            } else {
-                this.$cache.input.removeProp("tabindex");
-            }
-
-            this.has_tab_index = !this.has_tab_index;
-        },
-
+        
         /**
          * Convert real value to percent
          *
@@ -2318,7 +2307,7 @@
                 label = this.$cache.grid_labels[next_i][0];
 
                 if (finish[i] <= start[next_i]) {
-                    label.style.visibility = "visible";
+                    label.style.visibility = "hidden";
                 } else {
                     label.style.visibility = "hidden";
                 }
