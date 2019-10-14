@@ -1,11 +1,8 @@
-* {
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   background-color: #f2f2f2;
+  font-size: 14px;
+  text-transform: uppercase;
   margin: 0px;
 }
 
@@ -844,9 +841,7 @@ input[type="checkbox"] {
   padding-right: 72px;
   padding-top: 32px;
   padding-bottom: 32px;
-  box-sizing: border-box;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  flex-wrap: wrap;
+  box-sizing: border-box; 
 }
 
 .search-result {
@@ -964,6 +959,7 @@ input[type="checkbox"] {
   color: #333333;
   display: inline-block;
   margin-bottom: 15px;
+  vertical-align: baseline;
 }
 
 .hotel-name {
