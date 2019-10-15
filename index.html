@@ -6,14 +6,14 @@
   <title>Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="content-wrapper">
     <header class="header">
-      <a class="header-logo" href="index.html">
-        <img src="img/logo.png" width="140" height="71" alt="logo-link">
+      <a class="header-logo" href="catalog.html">
+        <img src="img/logo.png" width="140" height="71" alt="основной логотип - ссылка на главную страницу">
       </a>
       <nav class="main-menu">
         <ul class="site-navigation">
@@ -34,9 +34,9 @@
     </header>
     <main>
       <div class="welcome-wrapper">
-        <div class="welcome-photo"><img src="img/welcome.png" width="459" height="353" alt="welcome-text"></div>
+        <div class="welcome-photo"><img src="img/welcome.png" width="459" height="353" alt="приветственный текст"></div>
         <section class="greetings">
-          <img class="mask" src="img/mask.png" width="1202" height="59" alt="mask">
+          <img class="mask" src="img/mask.png" width="1202" height="59" alt="рамка текста">
           <div class="greetings-text">
             <p class="main-greeting">Седона — небольшой городок в&nbsp;Аризоне, заслуживающий большего!</p>
             <p class="second-greeting">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
@@ -52,27 +52,27 @@
             <p>— №1 —</p>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <img class="feature-image" src="img/japanes-house.jpg" width="800" height="256" alt="house">
+          <img class="feature-image" src="img/japanes-house.jpg" width="800" height="256" alt="изображение домов">
         </div>
         <ul class="advices">
           <li class="advice">
-            <img src="img/house-icon.svg" width="75" height="72" alt="icon">
+            <img src="img/house-icon.svg" width="75" height="72" alt="иконка мотеля">
             <p class="advices-name">Жильё</p>
             <p>Рекомендуем пожить в настоящем Мотеле, все как в кино!</p>
           </li>
           <li class="advice">
-            <img src="img/burger-icon.svg" width="74" height="70" alt="icon">
+            <img src="img/burger-icon.svg" width="74" height="70" alt="иконка еды">
             <p class="advices-name">Еда</p>
             <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </li>
           <li class="advice">
-            <img src="img/present-icon.svg" width="64" height="76" alt="icon">
+            <img src="img/present-icon.svg" width="64" height="76" alt="иконка сувенира">
             <p class="advices-name">Сувениры</p>
             <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
         <div class="feature">
-          <img src="img/canyon.jpg" width="800" height="256" alt="canyon">
+          <img src="img/canyon.jpg" width="800" height="256" alt="изображение каньона">
           <div class="feature-text">
             <p>Там есть<br>
               мост дьявола</p>
@@ -145,8 +145,8 @@
                 </div>
                 <div class="amount-of-block">
                   <div class="adult-form">
-                    <span class="adult-form-text">Взрослые:</span>
                     <div class="amount-of-container">
+                      <label for="adults"><span class="adult-form-text">Взрослые:</span></label>
                       <button class="condition-button amount-change-1" type="button"><span
                           class="minus"></span></button>
                       <input class="condition-button people-number" type="text" id="adults" name="amount_of_adults"
@@ -156,18 +156,20 @@
                     </div>
                   </div>
                   <div class="kids-form">
-                    <span class="kids-form-text">Дети:</span>
                     <div class="amount-of-container">
+                      <label for="kids"><span class="kids-form-text">Дети:</span></label>
                       <button class="condition-button amount-change-1" type="button"><span
                           class="minus"></span></button>
-                      <input class="condition-button people-number" type="text" name="amount_of_kids" value="0">
+                      <input class="condition-button people-number" type="text" id="kids" name="amount_of_kids"
+                        value="0">
                       <button class="condition-button amount-change-2" type="button"><span
                           class="plus">+</span></button>
                     </div>
                   </div>
                 </div>
               </div>
-              <button class="button search-button" type="submit">Найти</button>
+              <button class="button search-button" type="submit"
+                title="кнопка отправки формы поиска жилья">Найти</button>
             </form>
           </div>
         </div>
@@ -185,23 +187,23 @@
       <ul class="footer-social">
         <li class="social-button">
           <a class="social-link" href="https://twitter.com">
-            <img src="img/twitter.svg" width="17" height="15" alt="эмблема">
+            <img src="img/twitter.svg" width="17" height="15" alt="эмблема твиттера">
           </a>
         </li>
         <li class="social-button">
           <a class="social-link" href="https://facebook.com">
-            <img src="img/facebook.svg" width="12" height="22" alt="эмблема">
+            <img src="img/facebook.svg" width="12" height="22" alt="эмблема фейсбука">
           </a>
         </li>
         <li class="social-button">
           <a class="social-link" href="https://youtube.com">
-            <img src="img/youtube.svg" width="20" height="16" alt="эмблема">
+            <img src="img/youtube.svg" width="20" height="16" alt="эмблема ютуба">
           </a>
         </li>
       </ul>
       <div class="footer-copyrights">
         <p>Website By</p>
-        <a class="copyrights-link" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="copyrights-link" href="https://htmlacademy.ru/intensive/htmlcss" title="ссылка на курс академии">
           <svg class="html-logo" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 113 39" width="115"
             height="41">
             <path
@@ -211,7 +213,7 @@
       </div>
     </footer>
   </div>
-   <script src="js/scripts.js"></script>
+  <script src="js/scripts-min.js"></script>
 </body>
 
 </html>
