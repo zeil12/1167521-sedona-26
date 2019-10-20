@@ -7,7 +7,8 @@ body {
 }
 
 .content-wrapper {
-  max-width: 1200px;
+  width: 1200px;
+  position: relative;
   margin: auto;
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
@@ -126,12 +127,12 @@ body {
   font-weight: bold;
   line-height: 26px;
   font-size: 21px;
-  padding-top: 58px;
+  padding-top: 55px;
 }
 
 .second-greeting {
-  padding-top: 29px;
-  padding-bottom: 45px;
+  padding-top: 26px;
+  padding-bottom: 55px;
   line-height: 20px;
 }
 
@@ -162,6 +163,8 @@ body {
   padding-top: 50px;
   padding-bottom: 25px;
   line-height: 20px;
+  width: 200px;
+  margin: auto;
 }
 
 .feature-text p:last-child {
@@ -391,7 +394,9 @@ body {
   z-index: -2;
   width: 100%;
   display: flex;
-  background: url(../img/map.png) no-repeat;
+  background-image: url(../img/map.png); 
+  background-repeat: no-repeat;
+  background-size: 1200px 593px;
 }
 
 .iframe-map {
@@ -440,6 +445,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 29px;
+  align-items: center;
 }
 
 .check-out-block {
@@ -447,12 +453,7 @@ body {
   width: 100%;
   flex-wrap: wrap;
   margin-bottom: 29px;
-}
-
-.amount-of-block {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 .check-in-text {
@@ -472,13 +473,6 @@ body {
 
 .condition-form-container:first-of-type {
   padding-left: 3px;
-}
-
-.check-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
 }
 
 .condition-form {
@@ -539,6 +533,7 @@ body {
 
 .amount-of-block {
   display: flex;
+  width: 100%;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -565,6 +560,7 @@ body {
   line-height: 26px;
   text-align: left;
   color: #000000;
+  margin-top: 5px;
 }
 
 .adult-form-text {
@@ -575,25 +571,10 @@ body {
   margin-right: 27px;
 }
 
-.amount-of-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
 .amount-change-1,
 .amount-change-2 {
   border: none;
   position: relative;
-}
-
-.minus {
-  content: "";
-  display: inline-block;
-  width: 12px;
-  height: 3px;
-  background-color: #cacaca;
-  vertical-align: middle;
 }
 
 .plus {
@@ -610,11 +591,11 @@ body {
   background-color: #81b3d2;
 }
 
-.amount-change-2:hover span {
+.plus:hover {
   color: #000000;
 }
 
-.amount-change-2:active span {
+.plus:active {
   color: #81b3d2;
 }
 
@@ -626,13 +607,21 @@ body {
 
 .condition-button:hover {
   background-color: #ebebeb;
+  border: none;
 }
 
 .condition-button:focus {
-  height: 38px;
-  border: solid 1px #e5e5e5;
   background-color: #ffffff;
   outline: transparent;
+}
+
+.minus {
+  content:"";
+  display:inline-block;
+  width:12px;
+  height:3px;
+  background-color:#cacaca;
+  vertical-align:middle
 }
 
 .people-number {
@@ -1028,7 +1017,7 @@ body {
   color: #333333;
   display: inline-block;
   margin-bottom: 15px;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .hotel-name {
@@ -1273,6 +1262,9 @@ body {
 }
 
 .hotel-cost {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 15px;
   margin-left: 35px;
   color: #333333;
 }
